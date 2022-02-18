@@ -33,11 +33,10 @@ const cart = [
     }
 ]
 
-//CODE HERE
-
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
-
-
+//CODE HER
+const summedPrice = cart.reduce(function(total, price){ return total + price}, 0)
+//console.log(summedPrice)
+console.log(cart.reduce)
 //////////////////PROBLEM 2////////////////////
 /*  
     Write a function called `calcFinalPrice` that
@@ -56,7 +55,10 @@ const cart = [
 //CODE HERE
 
 
-
+const calcFinalPrice = cart.map(function(price){
+    return (price *= 1.07 ).toPrecision(4)
+})
+console.log(calcFinalPrice)
 //////////////////PROBLEM 3////////////////////
 /*  
     In this problem, you'll create a model for 
