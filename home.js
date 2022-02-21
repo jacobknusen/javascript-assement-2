@@ -27,7 +27,7 @@ function greetuser (username){
     return console.log(`welcome back ${username}`)
 }
 greetuser('jake knudsen')
-//const greetuser => console.log(`welcome back ${username}`)
+//const greetuser =>() console.log(`welcome back ${username}`)
 
 
 

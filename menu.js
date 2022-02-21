@@ -32,12 +32,12 @@
 
 //CODE HERE
 let pizza ={
-    name1: 'pep',
-    price: 10,
-    category: 'best pizza',
-    popularity: 10,
-    rating: 8/10,
-    tags: ['str']
+    name1: 'pepperoni',
+    price: 10.99,
+    category: 'entree',
+    popularity: 7/10,
+    rating: 1/4,
+    tags: ['pepperoni', 'cheese', 'crust']
 }
 
 
@@ -70,9 +70,9 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
-const { name1, category, popularity, ratings,tags} = pizza 
+let { price} = pizza 
 
-console.log(pizza)
+console.log(price)
 /*
     Fourth, and last, destructure the category
     property.
@@ -96,8 +96,7 @@ console.log(pizza)
 */
 
 //CODE HERE
-let arrary = {
-        pizza ={
+let foodArr = {
         name1: 'pep',
         price: 10,
         category: 'best pizza',
@@ -113,15 +112,16 @@ let arrary = {
         rating: 5/10,
         tags: ['str']
     },
-    let pizza ={
-        name1: 'pep',
-        price: 10,
-        category: 'best pizza',
-        popularity: 10,
-        rating: 8/10,
-        tags: ['str']
-    }
-}
+//     let  ={
+//         name1: 'pep',
+//         price: 10,
+//         category: 'best pizza',
+//         popularity: 10,
+//         rating: 8/10,
+//         tags: ['str']
+//     }
+
+ 
 
 
 //////////////////PROBLEM 4////////////////////
@@ -138,7 +138,13 @@ let arrary = {
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+
+
+ const filteredFood = foodArr.filter((item) =>{
+//console.log(item.tags)
+return item.tags.includes('pepperoni')
+ })
+ console.log(filteredFood)
 
 
 
@@ -180,9 +186,11 @@ let arrary = {
     
     Return the filtered array from the entire function
 */
-
+/
 //CODE HERE
-
+//  function filterByProperty(property, number, type){
+     
+//  }
 
 /*
     Invoke the `filterByProperty` function passing
@@ -192,3 +200,5 @@ let arrary = {
 */
 
 //CODE HERE
+const filterByProperty = (property, number, type) =>{
+    const filtered = foodarr
